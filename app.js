@@ -198,16 +198,12 @@ app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname + "/landing/index.html"));
 });
 
-app.get("/creatix/", (req, res) => {
-  res.sendFile(path.join(__dirname + "/landing/home.html"));
-});
-
 // All files are served from build folder which gets generated
 // when frontend code is built
 app.use(express.static(path.join(__dirname + "/build")));
 
 // This index.html is the game's main page and not web's landing page
-app.get("/creatix/game/*", (req, res) => {
+app.get("/game/*", (req, res) => {
   res.sendFile(__dirname + "/build/index.html");
 });
 
