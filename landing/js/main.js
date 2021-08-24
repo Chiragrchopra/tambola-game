@@ -16,7 +16,7 @@ function uniqueid() {
 window.onload = function () {
   var newRoomBtn = document.getElementById("generate-new-room");
   newRoomBtn.onclick = () => {
-    let uniqueRoomId = "game/" + uniqueid();
+    let uniqueRoomId = "/game/" + uniqueid();
     location.href = location.href + uniqueRoomId;
   };
 };

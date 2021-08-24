@@ -22,7 +22,7 @@ io.on("connection", (socket) => {
   socket.on("joinRoom", ({ username, room }) => {
     const user = userJoin(socket.id, username, room);
 
-    // joining the user in the room
+    // joining the user in the rooml̥
     socket.join(user.room);
 
     // events emitted for new connection
@@ -192,9 +192,14 @@ io.on("connection", (socket) => {
   });
 });
 
+app.get("/", (req, res) => {
+  res.write('<p>Not Found</p>');
+  res.end();
+});
+
 app.use(express.static(path.join(__dirname + "/landing")));
 
-app.get("/", (req, res) => {
+app.get("/creatix", (req, res) => {
   res.sendFile(path.join(__dirname + "/landing/index.html"));
 });
 
@@ -203,8 +208,8 @@ app.get("/", (req, res) => {
 app.use(express.static(path.join(__dirname + "/build")));
 
 // This index.html is the game's main page and not web's landing page
-app.get("/game/*", (req, res) => {
-  res.sendFile(__dirname + "/build/index.html");
+app.get("/creatix/game/*", (req, res) => {
+  res.sendFile(path.join(__dirname + "/build/index.html"));
 });
 
 let port = process.env.PORT || 3000;
