@@ -207,8 +207,8 @@ app.get("/creatix", (req, res) => {
 app.use(express.static(path.join(__dirname + "/build")));
 
 // This index.html is the game's main page and not web's landing page
-app.get("/game/*", (req, res) => {
-  res.sendFile(__dirname + "/build/index.html");
+app.get("/creatix/game/*", (req, res) => {
+  res.sendFile(__dirname + "/build/home.html");
 });
 
 let port = process.env.PORT || 3000;
