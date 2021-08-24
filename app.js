@@ -194,11 +194,11 @@ io.on("connection", (socket) => {
 
 app.use(express.static(path.join(__dirname + "/landing")));
 
-app.get("/", (req, res) => {
+app.get("/404", (req, res) => {
   res.sendFile(path.join(__dirname + "/landing/home.html"));
 });
 
-app.get("/abcd", (req, res) => {
+app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname + "/landing/index.html"));
 });
 

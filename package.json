@@ -13,11 +13,8 @@
     "type": "git",
     "url": "git+https://github.com/kashish-jain/tambola.git"
   },
-  "author": "Kashish, Chirag",
+  "author": "Chirag",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/kashish-jain/tambola/issues"
-  },
   "homepage": "https://github.com/kashish-jain/tambola#readme",
   "dependencies": {
     "express": "^4.17.1",
