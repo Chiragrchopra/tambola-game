@@ -194,12 +194,12 @@ io.on("connection", (socket) => {
 
 app.use(express.static(path.join(__dirname + "/landing")));
 
-app.get("/404", (req, res) => {
-  res.sendFile(path.join(__dirname + "/landing/home.html"));
-});
-
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname + "/landing/index.html"));
+});
+
+app.get("/creatix", (req, res) => {
+  res.sendFile(path.join(__dirname + "/landing/home.html"));
 });
 
 // All files are served from build folder which gets generated

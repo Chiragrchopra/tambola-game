@@ -11,11 +11,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kashish-jain/tambola.git"
+    "url": "git+https://github.com/chiragrchopra/tambola-game.git"
   },
   "author": "Chirag",
   "license": "MIT",
-  "homepage": "https://github.com/kashish-jain/tambola#readme",
+  "homepage": "https://github.com/chiragrchopra/tambola-game#readme",
   "dependencies": {
     "express": "^4.17.1",
     "http": "0.0.1-security",
