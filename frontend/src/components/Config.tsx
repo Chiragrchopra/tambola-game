@@ -409,7 +409,7 @@ class Config extends Component<ConfigProps, ConfigState> {
           <form onSubmit={this.handleSubmit}>
             <table className="config-table" id="pc-config-table">
               <tbody>
-                <tr>
+                <tr style={{display: "none"}}>
                   <td className="number-tickets">Number of Tickets:</td>
                   <td>
                     <input

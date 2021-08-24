@@ -14,7 +14,6 @@ function ReadyPlayers(props: ReadyPlayersProps) {
     playersComp.push(
       <tr key={i}>
         <td>{props.players[i].user.username}</td>
-        <td>{props.players[i].numTickets}</td>
         <td>{props.players[i].ready ? checkMark : "X"}</td>
       </tr>
     );
@@ -37,7 +36,6 @@ function ReadyPlayers(props: ReadyPlayersProps) {
       <table className="ready-players">
         <tr>
           <th>Name</th>
-          <th># of Tickets</th>
           <th>Ready</th>
         </tr>
         {playersComp}
