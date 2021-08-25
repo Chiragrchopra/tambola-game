@@ -21,7 +21,6 @@ function ResultButtons(props: ResultButtonsProps) {
           props.resultCallback(props.bogey);
         }}
       >
-        {props.bogey}
       </button>
     </div>
   );
