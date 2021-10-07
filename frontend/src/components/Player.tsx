@@ -56,11 +56,13 @@ class Player extends Component<PlayerProps, PlayerState> {
   // This function will be called if game ends
   endGame = () => {
     this.setState({ hasGameEnded: true });
-    this.reward.rewardMe();
+    //this.reward.rewardMe();
+    console.log('1');
     window.removeEventListener('beforeunload', doNotLeavePage);
     let timesRun = 0;
     let interval = setInterval(() => {
-      this.reward.rewardMe();
+      //this.reward.rewardMe();
+      console.log('2');
       ++timesRun;
       if (timesRun === 4) clearInterval(interval);
     }, 2000);
