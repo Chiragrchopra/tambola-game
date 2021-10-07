@@ -43,7 +43,6 @@ class Notification extends Component<NotificationProps, NotificationState> {
     );
     this.props.socket.on("callWinToHost", (callWinObj: callWin) => {
       //this.reward.rewardMe();
-      console.log('4');
       this.setState({ notificationObj: callWinObj });
       ticketBoardContainer?.setAttribute("style", "opacity:0.2;");
 
@@ -54,7 +53,6 @@ class Notification extends Component<NotificationProps, NotificationState> {
     });
     this.props.socket.on("resultsForPC", (resultsObj: resultObj) => {
       //this.reward.rewardMe();
-      console.log('3');
       this.setState({ notificationObj: resultsObj });
       ticketBoardContainer?.setAttribute("style", "opacity:0.2;");
 
