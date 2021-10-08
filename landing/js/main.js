@@ -17,6 +17,6 @@ window.onload = function () {
   var newRoomBtn = document.getElementById("generate-new-room");
   newRoomBtn.onclick = () => {
     let uniqueRoomId = "/game/" + uniqueid();
-    location.href = 'http://www.eutsav.in' + uniqueRoomId;
+    location.href = 'https://eutsav.in' + uniqueRoomId;
   };
 };
