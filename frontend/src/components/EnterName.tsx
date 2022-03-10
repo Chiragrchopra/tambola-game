@@ -61,12 +61,12 @@ class EnterName extends Component<EnterNameProps, EnterNameState> {
       return (
         <div className="enter-name-container">
           <div className="enter-name">
-            <p className="enter-name-question">Hi. What's your name?</p>
+            <p className="enter-name-question">Hi. Enter you Employee ID</p>
             <input
               id="enter-name"
               type="text"
               value={this.state.name}
-              placeholder="Type your answer here..."
+              placeholder="Type here..."
               onChange={this.handleChange}
               onKeyPress={this.handleKeyPress}
               spellCheck="false"

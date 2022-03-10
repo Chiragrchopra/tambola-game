@@ -35,7 +35,7 @@ function ReadyPlayers(props: ReadyPlayersProps) {
       <hr />
       <table className="ready-players">
         <tr>
-          <th>Name</th>
+          <th>Employee ID</th>
           <th>Ready</th>
         </tr>
         {playersComp}

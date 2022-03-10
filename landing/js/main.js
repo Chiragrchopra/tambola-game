@@ -17,6 +17,6 @@ window.onload = function () {
   var newRoomBtn = document.getElementById("generate-new-room");
   newRoomBtn.onclick = () => {
     let uniqueRoomId = "/game/" + uniqueid();
-    location.href = 'https://tambola-game.herokuapp.com' + uniqueRoomId;
+    location.href = 'https://www.quebecevents.in' + uniqueRoomId;
   };
 };

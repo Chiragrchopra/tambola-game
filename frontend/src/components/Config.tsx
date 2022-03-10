@@ -308,12 +308,10 @@ class Config extends Component<ConfigProps, ConfigState> {
       return (
         <>
           <h1 className="host-configuration">
-            Host left the game. Please close this tab. Generate a new room if
-            you want to play more.
+            Game Over.
+            Thank You for playing the game.
+            Winners will be shared shortly.
           </h1>
-          <a href="/" style={{ color: "white" }}>
-            <button>Back</button>
-          </a>
         </>
       );
     }
@@ -325,18 +323,15 @@ class Config extends Component<ConfigProps, ConfigState> {
       (this.state.readyHost && !this.state.readyClient)
     ) {
       return (
-        <>
-          <h1 className="host-configuration">
-            This game was started without you. You can play in the next game.
-            Meanwhile you can go back to the home screen and play another game
-            :)
-          </h1>
-          <a href="/" style={{ color: "white" }}>
-            <button>Home</button>
-          </a>
-        </>
+          <>
+            <h1 className="host-configuration">
+              This game is already started. Best of luck next time.
+              :)
+            </h1>
+          </>
       );
     }
+
 
     let mainComponent = null;
     if (this.state.readyHost && this.state.readyClient) {
